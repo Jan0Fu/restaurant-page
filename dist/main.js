@@ -10,19 +10,50 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 function createHome() {
-    const content = document.querySelector("#content");
-    const header = document.createElement("div");
-    header.classList.add("header");
-    header.textContent("This is Header");
-    content.append("header");
-
-    const homeHero = document.createElement("div");
-    homeHero.classList.add("homehero");
-    
+    const main = document.createElement("main");
+  
+    const section = document.createElement("section");
+    section.classList.add("home");
+    main.appendChild(section);
+  
+    const headline = document.createElement("h2");
+    headline.textContent = "Life should be ENJOYED!";
+    section.appendChild(headline);
+  
+    const textContainer = document.createElement("div");
+    textContainer.classList.add("home-text");
+    section.appendChild(textContainer);
+  
+    const firstPara = document.createElement("p");
+    firstPara.textContent = `This is not a simple restaurant. And you are terribly wrong, if
+    you think that it is a bakery. It is not.`;
+    textContainer.appendChild(firstPara);
+  
+    const secondPara = document.createElement("p");
+    secondPara.textContent = `Let us surprise you. Do you love bread? You are in good place.
+    Best place. We love it too. We went quite overboard with our love
+    - we love it so much that we decided to make every meal out of
+    bread. Isn't that genius?`;
+    textContainer.appendChild(secondPara);
+  
+    const thirdPara = document.createElement("p");
+    thirdPara.textContent = `Welcome to our restaurant which is not a bakery at all. We serve
+    crusty, bready and delicious dishes just for you.`;
+    textContainer.appendChild(thirdPara);
+  
+    const sidebar = document.createElement("div");
+    sidebar.classList.add("left-sidebar");
+    sidebar.classList.add("sidebar");
+    main.appendChild(sidebar);
+  
+    const bakery = document.createElement("img");
+    bakery.src = "images/restaurant.jpg";
+    sidebar.appendChild(bakery);
+  
+    return main;
 }
-
+  
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createHome);
-
 
 /***/ })
 /******/ 	]);
@@ -85,10 +116,12 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _modules_home_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 
 
-(0,_modules_home_js__WEBPACK_IMPORTED_MODULE_0__["default"])();
+const mainContent = document.querySelector("#content");
+
+mainContent.appendChild((0,_home__WEBPACK_IMPORTED_MODULE_0__["default"])());
 })();
 
 /******/ })()

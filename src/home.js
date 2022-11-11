@@ -6,7 +6,7 @@ function createHome() {
     main.appendChild(section);
   
     const headline = document.createElement("h2");
-    headline.textContent = "The CRUNCH is unforgettable!";
+    headline.textContent = "Life should be ENJOYED!";
     section.appendChild(headline);
   
     const textContainer = document.createElement("div");
@@ -36,7 +36,7 @@ function createHome() {
     main.appendChild(sidebar);
   
     const bakery = document.createElement("img");
-    bakery.src = "images/bakery.jpg";
+    bakery.src = "images/restaurant.jpg";
     sidebar.appendChild(bakery);
   
     return main;
