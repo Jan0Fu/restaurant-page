@@ -14,8 +14,8 @@ function createHome() {
     section.appendChild(textContainer);
   
     const firstPara = document.createElement("p");
-    firstPara.textContent = `This is not a simple restaurant. And you are terribly wrong, if
-    you think that it is a bakery. It is not.`;
+    firstPara.textContent = `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Donec dapibus, justo sit amet sagittis varius, dui augue mollis turpis, ut.`;
     textContainer.appendChild(firstPara);
   
     const secondPara = document.createElement("p");
@@ -26,8 +26,8 @@ function createHome() {
     textContainer.appendChild(secondPara);
   
     const thirdPara = document.createElement("p");
-    thirdPara.textContent = `Welcome to our restaurant which is not a bakery at all. We serve
-    crusty, bready and delicious dishes just for you.`;
+    thirdPara.textContent = `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Donec dapibus, justo sit amet sagittis varius, dui augue mollis turpis, ut.`;
     textContainer.appendChild(thirdPara);
   
     const sidebar = document.createElement("div");

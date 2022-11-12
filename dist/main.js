@@ -1,10 +1,10 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ([
 /* 0 */,
 /* 1 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -25,8 +25,8 @@ function createHome() {
     section.appendChild(textContainer);
   
     const firstPara = document.createElement("p");
-    firstPara.textContent = `This is not a simple restaurant. And you are terribly wrong, if
-    you think that it is a bakery. It is not.`;
+    firstPara.textContent = `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Donec dapibus, justo sit amet sagittis varius, dui augue mollis turpis, ut.`;
     textContainer.appendChild(firstPara);
   
     const secondPara = document.createElement("p");
@@ -37,8 +37,8 @@ function createHome() {
     textContainer.appendChild(secondPara);
   
     const thirdPara = document.createElement("p");
-    thirdPara.textContent = `Welcome to our restaurant which is not a bakery at all. We serve
-    crusty, bready and delicious dishes just for you.`;
+    thirdPara.textContent = `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Donec dapibus, justo sit amet sagittis varius, dui augue mollis turpis, ut.`;
     textContainer.appendChild(thirdPara);
   
     const sidebar = document.createElement("div");
@@ -54,6 +54,14 @@ function createHome() {
 }
   
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createHome);
+
+/***/ }),
+/* 2 */
+/***/ (() => {
+
+function createHeader() {
+    
+}
 
 /***/ })
 /******/ 	]);
@@ -83,6 +91,18 @@ function createHome() {
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -113,14 +133,19 @@ function createHome() {
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_header__WEBPACK_IMPORTED_MODULE_1__);
+
 
 
 const mainContent = document.querySelector("#content");
 
+mainContent.appendChild(_header__WEBPACK_IMPORTED_MODULE_1___default()());
 mainContent.appendChild((0,_home__WEBPACK_IMPORTED_MODULE_0__["default"])());
 })();
 
