@@ -1,14 +1,17 @@
 import createHome from './home';
+import createHR from "./rule";
 import createHeader from './header';
 import createMenu from './menu';
 import createContact from "./contact";
 
+
 const mainContent = document.querySelector("#content");
 
-mainContent.appendChild(createHome());
 mainContent.appendChild(createHeader());
-mainContent.appendChild(createMenu());
-mainContent.appendChild(createContact());
+mainContent.appendChild(createHR());
+mainContent.appendChild(createHome());
+mainContent.appendChild(createHR());
+
 
 const navigationTabs = document.querySelectorAll(".tab");
 
