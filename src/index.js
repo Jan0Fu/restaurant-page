@@ -1,5 +1,5 @@
 import createHome from './home';
-import createHeader from './header';
+//import createHeader from './header';
 
 const mainContent = document.querySelector("#content");
 

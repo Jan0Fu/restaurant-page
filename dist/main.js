@@ -1,10 +1,10 @@
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ([
 /* 0 */,
 /* 1 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -30,15 +30,13 @@ function createHome() {
     textContainer.appendChild(firstPara);
   
     const secondPara = document.createElement("p");
-    secondPara.textContent = `Let us surprise you. Do you love bread? You are in good place.
-    Best place. We love it too. We went quite overboard with our love
-    - we love it so much that we decided to make every meal out of
-    bread. Isn't that genius?`;
+    secondPara.textContent = `In non nisi sit amet tortor vehicula imperdiet. 
+    Suspendisse fermentum lorem in magna ullamcorper lobortis. Etiam aliquam auctor diam vitae pharetra. In facilisis malesuada urna ut sodales. 
+    Pellentesque at scelerisque leo. Proin dapibus ac.`;
     textContainer.appendChild(secondPara);
   
     const thirdPara = document.createElement("p");
-    thirdPara.textContent = `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Donec dapibus, justo sit amet sagittis varius, dui augue mollis turpis, ut.`;
+    thirdPara.textContent = `"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."`;
     textContainer.appendChild(thirdPara);
   
     const sidebar = document.createElement("div");
@@ -57,11 +55,29 @@ function createHome() {
 
 /***/ }),
 /* 2 */
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 function createHeader() {
-    
+    const header = document.createElement("header");
+    const container = document.createElement("div");
+    container.classList.add("header-container");
+    header.appendChild(container);
+
+    const title = document.createElement("h1");
+    container.appendChild(title);
+
+    const logo = document.createElement("img");
+    logo.id = "logo";
+    logo.src = "images/logo.png";
+    logo.alt = "restaurant logo";
+    title.appendChild(logo);
+
 }
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createHeader);
 
 /***/ })
 /******/ 	]);
@@ -91,18 +107,6 @@ function createHeader() {
 /******/ 	}
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	(() => {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = (module) => {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				() => (module['default']) :
-/******/ 				() => (module);
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -133,19 +137,17 @@ function createHeader() {
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
-/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_header__WEBPACK_IMPORTED_MODULE_1__);
 
 
 
 const mainContent = document.querySelector("#content");
 
-mainContent.appendChild(_header__WEBPACK_IMPORTED_MODULE_1___default()());
+mainContent.appendChild((0,_header__WEBPACK_IMPORTED_MODULE_1__["default"])());
 mainContent.appendChild((0,_home__WEBPACK_IMPORTED_MODULE_0__["default"])());
 })();
 

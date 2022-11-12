@@ -19,15 +19,13 @@ function createHome() {
     textContainer.appendChild(firstPara);
   
     const secondPara = document.createElement("p");
-    secondPara.textContent = `Let us surprise you. Do you love bread? You are in good place.
-    Best place. We love it too. We went quite overboard with our love
-    - we love it so much that we decided to make every meal out of
-    bread. Isn't that genius?`;
+    secondPara.textContent = `In non nisi sit amet tortor vehicula imperdiet. 
+    Suspendisse fermentum lorem in magna ullamcorper lobortis. Etiam aliquam auctor diam vitae pharetra. In facilisis malesuada urna ut sodales. 
+    Pellentesque at scelerisque leo. Proin dapibus ac.`;
     textContainer.appendChild(secondPara);
   
     const thirdPara = document.createElement("p");
-    thirdPara.textContent = `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Donec dapibus, justo sit amet sagittis varius, dui augue mollis turpis, ut.`;
+    thirdPara.textContent = `"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."`;
     textContainer.appendChild(thirdPara);
   
     const sidebar = document.createElement("div");
