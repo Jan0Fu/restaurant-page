@@ -15,7 +15,6 @@ mainContent.appendChild(createHR());
 
 const navigationTabs = document.querySelectorAll(".tab");
 
-// add event listener to each tab
 navigationTabs.forEach(tab => tab.addEventListener("click", (event) => {
     // remove main html tag from page and append new node after first hr tag
     if (event.target.htmlFor === "tab-1" && !document.querySelector("section").classList.contains("home")) {
