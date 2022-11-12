@@ -53,32 +53,6 @@ function createHome() {
   
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createHome);
 
-/***/ }),
-/* 2 */
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-function createHeader() {
-    const header = document.createElement("header");
-    const container = document.createElement("div");
-    container.classList.add("header-container");
-    header.appendChild(container);
-
-    const title = document.createElement("h1");
-    container.appendChild(title);
-
-    const logo = document.createElement("img");
-    logo.id = "logo";
-    logo.src = "images/logo.png";
-    logo.alt = "restaurant logo";
-    title.appendChild(logo);
-
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createHeader);
-
 /***/ })
 /******/ 	]);
 /************************************************************************/
@@ -141,13 +115,12 @@ var __webpack_exports__ = {};
 (() => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 
-
+//import createHeader from './header';
 
 const mainContent = document.querySelector("#content");
 
-mainContent.appendChild((0,_header__WEBPACK_IMPORTED_MODULE_1__["default"])());
+//mainContent.appendChild(createHeader());
 mainContent.appendChild((0,_home__WEBPACK_IMPORTED_MODULE_0__["default"])());
 })();
 
